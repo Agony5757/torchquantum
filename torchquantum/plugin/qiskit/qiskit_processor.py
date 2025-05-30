@@ -27,8 +27,9 @@ import torchquantum as tq
 import pathos.multiprocessing as multiprocessing
 import itertools
 
-from qiskit import Aer, execute, IBMQ, transpile, QuantumCircuit
-from qiskit.providers.aer.noise import NoiseModel
+from qiskit_aer import Aer
+from qiskit import execute, IBMQ, transpile, QuantumCircuit
+from qiskit_aer.noise import NoiseModel
 from qiskit.tools.monitor import job_monitor
 from qiskit.exceptions import QiskitError
 from .qiskit_plugin import (
