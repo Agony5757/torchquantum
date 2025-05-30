@@ -31,7 +31,7 @@ from qiskit_aer import Aer
 from qiskit import transpile, QuantumCircuit
 from qiskit_aer.noise import NoiseModel
 #from qiskit_ibm_provider.job import job_monitor
-from qiskit_ibm_provider import IBMProvider
+#from qiskit_ibm_provider import IBMProvider
 from qiskit.exceptions import QiskitError
 from .qiskit_plugin import (
     tq2qiskit,
