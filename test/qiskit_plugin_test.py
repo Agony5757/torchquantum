@@ -28,7 +28,8 @@ import torch
 import torchquantum as tq
 import numpy as np
 
-from qiskit import Aer, execute
+from qiskit import transpile, execute
+from qiskit_aer import Aer
 from torchpack.utils.logging import logger
 from torchquantum.util import (
     switch_little_big_endian_matrix,
