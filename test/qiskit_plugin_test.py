@@ -28,7 +28,7 @@ import torch
 import torchquantum as tq
 import numpy as np
 
-from qiskit import transpile, execute
+from qiskit import transpile
 from qiskit_aer import Aer
 from torchpack.utils.logging import logger
 from torchquantum.util import (
@@ -36,6 +36,7 @@ from torchquantum.util import (
     switch_little_big_endian_state,
     get_expectations_from_counts,
     find_global_phase,
+    execute
 )
 from test.static_mode_test import QLayer as AllRandomLayer
 from torchquantum.plugin import tq2qiskit

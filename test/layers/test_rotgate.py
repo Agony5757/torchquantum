@@ -1,6 +1,6 @@
 import torchquantum as tq
 import qiskit
-from qiskit import execute
+from torchquantum.util import execute
 from qiskit_aer import Aer
 
 from torchquantum.util import (
