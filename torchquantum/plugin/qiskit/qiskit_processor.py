@@ -28,7 +28,7 @@ import pathos.multiprocessing as multiprocessing
 import itertools
 
 from qiskit_aer import Aer
-from qiskit import IBMQ, transpile, QuantumCircuit
+from qiskit import transpile, QuantumCircuit
 from qiskit_aer.noise import NoiseModel
 from qiskit.tools.monitor import job_monitor
 from qiskit.exceptions import QiskitError
@@ -42,7 +42,7 @@ from torchquantum.util import (
     get_provider,
     get_provider_hub_group_project,
     get_circ_stats,
-    execute
+    execute,
 )
 from .qiskit_macros import IBMQ_NAMES
 from tqdm import tqdm
@@ -193,7 +193,7 @@ class QiskitProcessor(object):
 
         if self.backend is None:
             # initialize now
-            IBMQ.load_account()
+            # IBMQ.load_account()
             self.provider = get_provider_hub_group_project(
                 hub=self.hub,
                 group=self.group,
